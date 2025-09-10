@@ -21,7 +21,38 @@ for us to support them.
 ## Installation
 
 ```bash
-asdf plugin-add php https://github.com/asdf-community/asdf-php.git
+asdf plugin add php https://github.com/asdf-community/asdf-php.git
+```
+
+#### Linux
+
+To install PHP on Linux, you'll need to install build dependencies with development headers:
+
+* autoconf
+* re2c
+* libxml2
+* sqlite
+* libcurl
+* gd
+* oniguruma
+* libpq
+* readline
+* libzip
+
+##### Fedora
+
+Run this command to install required packages:
+
+```sh
+sudo dnf install autoconf re2c libxml2 libxml2-devel sqlite sqlite-devel libcurl libcurl-devel gd gd-devel oniguruma oniguruma-devel libpq libpq-devel readline readline-devel libzip libzip-devel
+```
+
+##### Debian
+
+Run this command to install required packages:
+
+```sh
+sudo apt install autoconf pkg-config gcc bison re2c libxml2-dev libssl-dev sqlite3 libsqlite3-dev zlib1g-dev libcurl4-openssl-dev libgd-dev build-essential libonig-dev libpq-dev libreadline-dev libzip-dev
 ```
 
 ## Note
